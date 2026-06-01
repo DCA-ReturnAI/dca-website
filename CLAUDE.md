@@ -21,7 +21,7 @@ Nuevas páginas: `<body class="v4 v5 v6">` y cargar las 4 CSS + 3 JS + image-slo
 |------|---------|-----------|--------|
 | `/` | `index.html` | Homepage — instalar categoría, capturar CEO en 8 segundos | ✅ Completo |
 | `/blog` | `blog.html` | Perspectivas — liderazgo de pensamiento | ✅ Completo |
-| `/modelo-aria` | `modelo-aria.html` | Autoridad intelectual: 14 componentes, 6 sprints, garantía | 🔄 En construcción |
+| `/modelo-aria` | `modelo-aria.html` | Autoridad intelectual: 14 componentes, 6 sprints, garantía | 🔄 Nav fix + QA visual pendiente |
 | `/returnai` | `returnai.html` | Escalera de valor completa, tabla vs. vendors | ⏳ Pendiente |
 | `/nosotros` | `nosotros.html` | DCA, fundadores, casos, partnerships | ⏳ Pendiente |
 | `/academia` | `academia.html` | Digital Change Academy: certificaciones | ⏳ Pendiente |
@@ -54,8 +54,8 @@ Nuevas páginas: `<body class="v4 v5 v6">` y cargar las 4 CSS + 3 JS + image-slo
 
 - [x] Homepage (`index.html`)
 - [x] Perspectivas (`blog.html`)
-- [ ] `/modelo-aria` — **SIGUIENTE EN COLA**
-- [ ] `/returnai`
+- [x] `/modelo-aria` — HTML completo (639 líneas, 9 secciones, CSS propio 285 líneas). **Pendiente: corregir nav + QA visual + deploy**
+- [ ] `/returnai` — **SIGUIENTE EN COLA**
 - [ ] `/nosotros`
 - [ ] `/casos`
 - [ ] 5 páginas restantes
