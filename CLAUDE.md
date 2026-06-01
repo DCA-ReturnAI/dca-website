@@ -21,7 +21,7 @@ Nuevas páginas: `<body class="v4 v5 v6">` y cargar las 4 CSS + 3 JS + image-slo
 |------|---------|-----------|--------|
 | `/` | `index.html` | Homepage — instalar categoría, capturar CEO en 8 segundos | ✅ Completo |
 | `/blog` | `blog.html` | Perspectivas — liderazgo de pensamiento | ✅ Completo |
-| `/modelo-aria` | `modelo-aria.html` | Autoridad intelectual: 14 componentes, 6 sprints, garantía | 🔄 QA visual pendiente (fine-tuning al final) |
+| `/modelo-aria` | `modelo-aria.html` | Autoridad intelectual: 14 componentes, 6 sprints, garantía | ✅ Completa — desplegada en producción (fine-tuning al final) |
 | `/returnai` | `returnai.html` | Escalera de valor completa, tabla vs. vendors | ⏳ Pendiente |
 | `/nosotros` | `nosotros.html` | DCA, fundadores, casos, partnerships | ⏳ Pendiente |
 | `/academia` | `academia.html` | Digital Change Academy: certificaciones | ⏳ Pendiente |
@@ -61,8 +61,8 @@ Nuevas páginas: `<body class="v4 v5 v6">` y cargar las 4 CSS + 3 JS + image-slo
 
 - [x] Homepage (`index.html`)
 - [x] Perspectivas (`blog.html`)
-- [x] `/modelo-aria` — v6 integrada (778 líneas), routing corregido, enhance-aria.js + enhance-v6.js. Fine-tuning al final.
-- [ ] `/returnai` — **SIGUIENTE EN COLA**
+- [x] `/modelo-aria` — v6 integrada (778 líneas), routing corregido, enhance-aria.js + enhance-v6.js. Desplegada. Fine-tuning al final.
+- [ ] `/returnai` — **SIGUIENTE EN COLA** — arrancar con `/behavioral-economics-c-level` → `/copy returnai` → `/construir returnai`
 - [ ] `/nosotros`
 - [ ] `/casos`
 - [ ] 5 páginas restantes
