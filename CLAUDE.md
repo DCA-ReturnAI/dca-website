@@ -21,7 +21,7 @@ Nuevas páginas: `<body class="v4 v5 v6">` y cargar las 4 CSS + 3 JS + image-slo
 |------|---------|-----------|--------|
 | `/` | `index.html` | Homepage — fine-tuning BE completo (14 secciones) | ✅ Completo y en producción |
 | `/blog` | `blog.html` | Perspectivas — liderazgo de pensamiento | ✅ Completo y en producción |
-| `/modelo-aria` | `modelo-aria.html` | Autoridad intelectual: 14 componentes, 6 sprints, garantía | ✅ Desplegada — fine-tuning al final |
+| `/modelo-aria` | `modelo-aria.html` | Autoridad intelectual: 14 componentes, 6 sprints, garantía | ✅ Fine-tuning BE completo |
 | `/returnai` | `returnai.html` | Vitrina comercial: sistema ReturnAI, escalera de valor | ✅ Implementada — fine-tuning al final |
 | `/nosotros` | `nosotros.html` | DCA, fundadores, casos, partnerships | ✅ **Deployada** — 13 secciones live. Deuda: fotos reales, og específica, JSON-LD LinkedIn |
 | `/academia` | `academia.html` | Digital Change Academy: certificaciones | ⏳ Pendiente |
@@ -159,7 +159,7 @@ Nuevas páginas: `<body class="v4 v5 v6">` y cargar las 4 CSS + 3 JS + image-slo
 
 ## Decisiones Canónicas de `/modelo-aria` — Fine-Tuning (2026-06-03)
 
-> Fine-tuning activo. Los 3 puntos críticos se resuelven antes de cualquier otro ajuste.
+> **Fine-tuning completado (2026-06-03).** Los 3 puntos críticos y los 5 ajustes del inventario 🟡 están en producción. Commit `4b4abe8`.
 
 ### Etapa conductual y mecanismos
 - **Etapa del visitante:** Solución — ya reconoció el problema en el home, evalúa si ARIA es el método correcto
@@ -194,23 +194,53 @@ Nuevas páginas: `<body class="v4 v5 v6">` y cargar las 4 CSS + 3 JS + image-slo
 
 ### Inventario completo — decisiones de cada sección
 
-| Sección | Decisión | Razón |
+| Sección | Decisión | Estado |
 |---|---|---|
-| Hero S1 | ✅ Conservar | Copy distinto al home, correcto para etapa Solución |
-| El Problema S2 | 🟡 Reducir + reframe | Máximo 3 bullets; cambiar de "síntomas" a "indicadores de diagnóstico ARIA" |
-| Diagrama-Puente S2.5 | 🔴 **CRÍTICO** — Transformar | Mismo SVG que home; reemplazar por visualización de 3 tramos + 14 componentes |
-| Fundamento Intelectual S3 | 🔴 **CRÍTICO** — Eliminar method-strip | Contador 14/120/70+/17 duplica el hero__cred de esta misma página |
-| Las 3 Fases sticky rail S4 | 🟡 Diferenciar visualmente | Agregar duración por fase (sem. 1-3 / 4-10 / 11-17) y entregable clave no visible en home |
-| Los 14 Componentes S5 | ✅ Conservar íntegro | Único en toda la presencia web. Núcleo de autoridad intelectual |
-| Sprints MATCH S6 | ✅ Conservar íntegro | Único. Explica el *cómo* de la implementación |
-| Caso Ancla S7 | 🟡 Transformar perspectiva | Home muestra resultados; aquí mostrar componentes activados + modelo de medición |
-| Diferenciación S8 | ✅ Conservar | Framing diferente al home (ARIA vs. vendor tecnológico, no DCA vs. vendor genérico) |
-| Casos de Aplicación S9 | ✅ Conservar íntegro | Único. Auto-categorización del CEO en su escenario real |
-| Liderazgo S10 | 🔴 **CRÍTICO** — Reemplazar | 3 placeholders → 2 fundadores reales + fotos reales + framing como autores de ARIA |
-| FAQ Ejecutivo S11 | ✅ Conservar íntegro | Único. Reduce fricción cognitiva ante el comité de inversión |
-| Responsabilidad / Garantía | ✅ Conservar íntegro | Único. Risk reversal para el CFO en etapa de cierre |
-| Perspectivas S13 | 🟡 Asignar autores reales | Títulos correctos; eliminar `<p>` de "Títulos de muestra"; asignar César o Ruth como autor |
-| CTA Final | 🟡 Ajustar nota | Usar nota canónica: "Sin compromiso · 25 minutos · Tu reporte es confidencial" |
+| Hero S1 | Conservar — copy correcto para etapa Solución | ✅ |
+| El Problema S2 | 3 bullets; título → "Indicadores que diagnosticamos antes de toda intervención ARIA" | ✅ |
+| Diagrama-Puente S2.5 | SVG 3 tramos Diagnóstico/Solución/Impacto (3+7+4) — no el arco del home | ✅ |
+| Fundamento Intelectual S3 | Method-strip → 14/6/7/10 (datos metodológicos, no duplicar hero__cred) | ✅ |
+| Las 3 Fases sticky rail S4 | Duración por fase (sem. 1-3 / 4-10 / 11-17) + entregable nominal por fase | ✅ |
+| Los 14 Componentes S5 | Conservar íntegro — único en toda la presencia web | ✅ |
+| Sprints MATCH S6 | Conservar íntegro — explica el *cómo* de la implementación | ✅ |
+| Caso Ancla S7 | Bloque metodológico: componentes ARIA activados + evidencia de atribución | ✅ |
+| Diferenciación S8 | Conservar — ARIA vs. vendor tecnológico (framing distinto al home) | ✅ |
+| Casos de Aplicación S9 | Conservar íntegro — auto-categorización del CEO | ✅ |
+| Liderazgo S10 | 2 fundadores reales, fotos reales, label "Quién lo construyó" | ✅ |
+| FAQ Ejecutivo S11 | Conservar íntegro — reduce fricción ante el comité | ✅ |
+| Responsabilidad / Garantía | Conservar íntegro — risk reversal CFO | ✅ |
+| Perspectivas S13 | Autores asignados (Adopción → César; Gobierno del cambio → Ruth; Evidencia → César) · sin nota de staging | ✅ |
+| CTA Final | Nota canónica: "Sin compromiso · 25 minutos · Tu reporte es confidencial" | ✅ |
+
+### Ajustes 🟡 — Implementación (2026-06-03)
+
+**S2 El Problema:**
+- Título canónico: `"Indicadores que diagnosticamos antes de toda intervención ARIA"` (no "Tu comité ya está viendo esto")
+- 3 bullets canónicos: "Pilotos aprobados hace +12 meses sin veredicto financiero para la Junta" · "Licencias activas que no aparecen como valor en el P&L" · "Comité ejecutivo exigiendo el número de ROI de la estrategia de IA"
+
+**S4 Las 3 Fases — duraciones y entregables canónicos:**
+| Fase | Semanas | Entregable nominal |
+|---|---|---|
+| Diagnóstico | 1–3 | Informe de Línea Base Auditable (LBA) |
+| Solución | 4–10 | Sprint Log semanal con evidencia de movimiento del KPI |
+| Impacto | 11–17 | Reporte Ejecutivo de Retorno para presentación ante el Comité de Inversión |
+
+**S7 Caso Ancla — componentes metodológicos activados:**
+- Diagnóstico: AI Mindset Test (87 líderes) · AI Leadership Style (12 directores) · AI Culture Diagnostic (3 unidades de negocio)
+- Solución: MATCH (6 sprints · 90 días) · AI North Star (alineación C-Suite) · Digital Team Leadership (LED)
+- Impacto: Impact Validation Matrix (KPI ancla: persistencia de clientes) · AI Governance Canvas (gobierno post-intervención)
+
+**S13 Perspectivas — autores asignados:**
+- "Adopción" (última milla humana) → **César Lozano**
+- "Gobierno del cambio" (champion sin autoridad) → **Ruth Jaramillo**
+- "Evidencia" (número ROI vs. auditoría) → **César Lozano**
+
+**CSS nuevo en `styles-modelo-aria.css`:**
+- `.phase-dur` / `.phase-dur--gold` — pill de duración bajo el h3 de cada fase
+- `.phase-dlv` / `.phase-dlv--gold` — chip de entregable bajo la lista de cada fase
+- `.case__method` / `.case__method-grid` / `.case__method-list` — bloque metodológico en sección de caso
+- `.badge--gold` — variante oro del badge (fondo `#fff8e8`, borde `var(--gold)`)
+- `.leaders` override → `repeat(2, 1fr)` + `max-width: 760px` (2 fundadores, no 3)
 
 ### Datos canónicos de esta página
 - Stats del hero: `14` Componentes · `120` Días · `70+` Empresas · `17` Países (comunidad LARIA, no presencia de firma)
@@ -241,7 +271,7 @@ Nuevas páginas: `<body class="v4 v5 v6">` y cargar las 4 CSS + 3 JS + image-slo
 
 - [x] Homepage (`index.html`) — fine-tuning BE completo 14 secciones + modal libro
 - [x] Perspectivas (`blog.html`)
-- [x] `/modelo-aria` — v6 integrada. Fine-tuning pendiente: image-slots → img reales, textos líderes (placeholder), validación BE, **bridge usa 19% (real case) — verificar si debe alinearse a 11% del homepage**
+- [x] `/modelo-aria` — Fine-tuning BE completo (8 puntos · commit `4b4abe8`). Pendiente: image-slots → img reales antes del dominio final
 - [x] `/returnai` — v6 implementada, brand compliance aplicado, routing canónico. Fine-tuning al final. **bridge usa 19% (real case) — verificar alineación con homepage (11%)**
 - [x] `/nosotros` — Implementada (13 secciones). Archivos: `nosotros.html` + `styles-nosotros*.css` (×6) + `enhance-nosotros4.js`. Deuda técnica: fotos reales pendientes (image-slot activo), `og-nosotros.png` específica pendiente, JSON-LD `sameAs` (LinkedIn) pendiente. Fine-tuning BE (secciones Propósito + Principios) al final.
 - [ ] `/casos`
