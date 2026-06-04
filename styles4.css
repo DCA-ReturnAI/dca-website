@@ -67,8 +67,8 @@
 .aria2__step h3 { margin: 22px 0 12px; }
 .aria2__step p { color: var(--carbon-70); }
 .aria2__step ul { list-style: none; margin-top: 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px 24px; }
-.aria2__step li { font-size: 14.5px; color: var(--carbon-70); padding-left: 18px; position: relative; }
-.aria2__step li::before { content: ""; position: absolute; left: 0; top: 9px; width: 6px; height: 6px; background: var(--gold); border-radius: 50%; }
+.aria2__step li { font-size: 12.5px; color: var(--carbon-70); padding-left: 18px; position: relative; }
+.aria2__step li::before { content: ""; position: absolute; left: 0; top: 7px; width: 6px; height: 6px; background: var(--gold); border-radius: 50%; }
 
 /* ============================================================
    Slots de imagen arrastrables (image-slot)
