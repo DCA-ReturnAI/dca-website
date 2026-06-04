@@ -813,23 +813,26 @@ html { scroll-padding-top: 96px; }
 /* Reset herencia de stroke del iconbox global — colores via style="" inline */
 .aria2__step .iconbox svg { stroke: none; overflow: visible; }
 
-/* Segmento de progreso: visible por defecto (refresh-safe) */
+/* Segmento de progreso: oculto por defecto; noscript override lo fuerza visible */
 .aria2__step .iconbox .seg-progress {
   stroke-dasharray: 100;
-  stroke-dashoffset: 0;
+  stroke-dashoffset: 100;
 }
 /* Override transition de styles6 — el @keyframes controla solo */
 .v6 .aria2__step .iconbox .seg-progress { transition: none; }
+
+/* Tras primera activación: el path queda visible aunque el step pierda .active */
+.aria2__step.drawn .iconbox .seg-progress { stroke-dashoffset: 0; }
 
 @keyframes segDraw {
   from { stroke-dashoffset: 100; }
   to   { stroke-dashoffset: 0; }
 }
 .aria2__step.active .iconbox .seg-progress {
-  animation: segDraw 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation: segDraw 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-/* Halo dorado — Fase 3: invisible en reposo, se expande al activarse */
+/* Halo dorado — Fase 3: invisible en reposo, pulsa al activarse */
 .aria2__step .iconbox .halo-gold { opacity: 0; transform-origin: center; }
 @keyframes haloExpand {
   0%   { opacity: 0;    transform: scale(1); }
@@ -842,5 +845,6 @@ html { scroll-padding-top: 96px; }
 
 @media (prefers-reduced-motion: reduce) {
   .aria2__step.active .iconbox .seg-progress { animation: none; }
+  .aria2__step.drawn  .iconbox .seg-progress { stroke-dashoffset: 0; }
   .aria2__step.active .iconbox .halo-gold    { animation: none; }
 }

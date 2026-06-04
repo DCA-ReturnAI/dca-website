@@ -325,20 +325,21 @@
 
       <div class="aria2__steps">
 
-        <article class="aria2__step active" data-screen-label="Fase 1 — Diagnóstico">
+        <article class="aria2__step active drawn" data-screen-label="Fase 1 — Diagnóstico">
           <div class="iconbox" aria-hidden="true">
             <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-              <!-- Tramos 2 y 3: pendientes -->
-              <path d="M21 12 C26 7 38 7 43 12" style="fill:none;stroke:rgba(30,42,56,0.38);stroke-width:1.5;stroke-linecap:round;"/>
-              <path d="M43 12 C49 14 54 54 58 54" style="fill:none;stroke:rgba(30,42,56,0.38);stroke-width:1.5;stroke-linecap:round;"/>
-              <!-- Tramo 1: progreso -->
-              <path class="seg-progress" d="M6 54 C10 54 15 14 21 12" pathLength="100" style="fill:none;stroke:#2e8b76;stroke-width:3;stroke-linecap:round;"/>
-              <!-- N2, N3, N4: pendientes -->
-              <circle cx="21" cy="12" r="4" style="fill:none;stroke:rgba(30,42,56,0.38);stroke-width:1.5;"/>
-              <circle cx="43" cy="12" r="4" style="fill:none;stroke:rgba(30,42,56,0.38);stroke-width:1.5;"/>
-              <circle cx="58" cy="54" r="5" style="fill:none;stroke:rgba(30,42,56,0.38);stroke-width:1.5;"/>
+              <!-- Segs 2, 3: pendientes -->
+              <path d="M22 28 C27 22 37 22 42 28" style="fill:none;stroke:rgba(30,42,56,0.38);stroke-width:1.5;stroke-linecap:round;"/>
+              <path d="M42 28 C47 28 51 52 56 52" style="fill:none;stroke:rgba(30,42,56,0.38);stroke-width:1.5;stroke-linecap:round;"/>
+              <!-- Seg1: progreso -->
+              <path class="seg-progress" d="M8 52 C13 52 17 28 22 28" pathLength="100" style="fill:none;stroke:#2e8b76;stroke-width:3;stroke-linecap:round;"/>
+              <!-- N2, N3: pendientes -->
+              <circle cx="22" cy="28" r="4" style="fill:none;stroke:rgba(30,42,56,0.38);stroke-width:1.5;"/>
+              <circle cx="42" cy="28" r="4" style="fill:none;stroke:rgba(30,42,56,0.38);stroke-width:1.5;"/>
+              <!-- N4: pendiente -->
+              <circle cx="56" cy="52" r="5" style="fill:none;stroke:rgba(30,42,56,0.38);stroke-width:1.5;"/>
               <!-- N1: activo -->
-              <circle cx="6" cy="54" r="6" style="fill:#2e8b76;stroke:none;"/>
+              <circle cx="8" cy="52" r="6" style="fill:#2e8b76;stroke:none;"/>
             </svg>
           </div>
           <h3>Diagnóstico — Línea base auditable</h3>
@@ -363,18 +364,18 @@
         <article class="aria2__step" data-screen-label="Fase 2 — Solución">
           <div class="iconbox" aria-hidden="true">
             <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-              <!-- Tramo 3: pendiente -->
-              <path d="M43 12 C49 14 54 54 58 54" style="fill:none;stroke:rgba(30,42,56,0.38);stroke-width:1.5;stroke-linecap:round;"/>
-              <!-- Tramo 1: completado -->
-              <path d="M6 54 C10 54 15 14 21 12" style="fill:none;stroke:#2e8b76;stroke-width:3;stroke-linecap:round;"/>
-              <!-- Tramo 2: progreso -->
-              <path class="seg-progress" d="M21 12 C26 7 38 7 43 12" pathLength="100" style="fill:none;stroke:#2e8b76;stroke-width:3;stroke-linecap:round;"/>
+              <!-- Seg3: pendiente -->
+              <path d="M42 28 C47 28 51 52 56 52" style="fill:none;stroke:rgba(30,42,56,0.38);stroke-width:1.5;stroke-linecap:round;"/>
+              <!-- Seg1: completado estático -->
+              <path d="M8 52 C13 52 17 28 22 28" style="fill:none;stroke:#2e8b76;stroke-width:3;stroke-linecap:round;"/>
+              <!-- Seg2: progreso -->
+              <path class="seg-progress" d="M22 28 C27 22 37 22 42 28" pathLength="100" style="fill:none;stroke:#2e8b76;stroke-width:3;stroke-linecap:round;"/>
               <!-- N3, N4: pendientes -->
-              <circle cx="43" cy="12" r="4" style="fill:none;stroke:rgba(30,42,56,0.38);stroke-width:1.5;"/>
-              <circle cx="58" cy="54" r="5" style="fill:none;stroke:rgba(30,42,56,0.38);stroke-width:1.5;"/>
+              <circle cx="42" cy="28" r="4" style="fill:none;stroke:rgba(30,42,56,0.38);stroke-width:1.5;"/>
+              <circle cx="56" cy="52" r="5" style="fill:none;stroke:rgba(30,42,56,0.38);stroke-width:1.5;"/>
               <!-- N1, N2: completados -->
-              <circle cx="6" cy="54" r="6" style="fill:#2e8b76;stroke:none;"/>
-              <circle cx="21" cy="12" r="4.5" style="fill:#2e8b76;stroke:none;"/>
+              <circle cx="8" cy="52" r="6" style="fill:#2e8b76;stroke:none;"/>
+              <circle cx="22" cy="28" r="4.5" style="fill:#2e8b76;stroke:none;"/>
             </svg>
           </div>
           <h3>Solución — Intervención calibrada al diagnóstico</h3>
@@ -403,19 +404,19 @@
         <article class="aria2__step" data-screen-label="Fase 3 — Impacto">
           <div class="iconbox" aria-hidden="true">
             <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-              <!-- Tramos 1 y 2: completados -->
-              <path d="M6 54 C10 54 15 14 21 12" style="fill:none;stroke:#2e8b76;stroke-width:3;stroke-linecap:round;"/>
-              <path d="M21 12 C26 7 38 7 43 12" style="fill:none;stroke:#2e8b76;stroke-width:3;stroke-linecap:round;"/>
-              <!-- Tramo 3: progreso -->
-              <path class="seg-progress" d="M43 12 C49 14 54 54 58 54" pathLength="100" style="fill:none;stroke:#2e8b76;stroke-width:3;stroke-linecap:round;"/>
-              <!-- Halo dorado -->
-              <circle class="halo-gold" cx="58" cy="54" r="8" style="fill:none;stroke:#a48111;stroke-width:1.5;"/>
+              <!-- Segs 1, 2: completados estáticos -->
+              <path d="M8 52 C13 52 17 28 22 28" style="fill:none;stroke:#2e8b76;stroke-width:3;stroke-linecap:round;"/>
+              <path d="M22 28 C27 22 37 22 42 28" style="fill:none;stroke:#2e8b76;stroke-width:3;stroke-linecap:round;"/>
+              <!-- Seg3: progreso -->
+              <path class="seg-progress" d="M42 28 C47 28 51 52 56 52" pathLength="100" style="fill:none;stroke:#2e8b76;stroke-width:3;stroke-linecap:round;"/>
+              <!-- Halo dorado en N4 -->
+              <circle class="halo-gold" cx="56" cy="52" r="9" style="fill:none;stroke:#a48111;stroke-width:1.5;"/>
               <!-- N1, N2, N3: completados -->
-              <circle cx="6" cy="54" r="6" style="fill:#2e8b76;stroke:none;"/>
-              <circle cx="21" cy="12" r="4.5" style="fill:#2e8b76;stroke:none;"/>
-              <circle cx="43" cy="12" r="4.5" style="fill:#2e8b76;stroke:none;"/>
-              <!-- N4: destino en oro -->
-              <circle cx="58" cy="54" r="6" style="fill:#a48111;stroke:none;"/>
+              <circle cx="8" cy="52" r="6" style="fill:#2e8b76;stroke:none;"/>
+              <circle cx="22" cy="28" r="4.5" style="fill:#2e8b76;stroke:none;"/>
+              <circle cx="42" cy="28" r="4.5" style="fill:#2e8b76;stroke:none;"/>
+              <!-- N4: destino oro -->
+              <circle cx="56" cy="52" r="6" style="fill:#a48111;stroke:none;"/>
             </svg>
           </div>
           <h3>Impacto — Retorno documentado para la Junta</h3>

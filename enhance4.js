@@ -61,7 +61,10 @@ function updateStepper() {
   const threshold = window.innerHeight * 0.5;
   let active = 0;
   steps.forEach((s, i) => { if (s.getBoundingClientRect().top < threshold) active = i; });
-  steps.forEach((s, i) => s.classList.toggle('active', i === active));
+  steps.forEach((s, i) => {
+    s.classList.toggle('active', i === active);
+    if (i === active) s.classList.add('drawn');
+  });
   railItems.forEach((li, i) => li.classList.toggle('active', i === active));
 }
 updateStepper();
