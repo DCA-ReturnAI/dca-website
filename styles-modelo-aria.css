@@ -805,3 +805,56 @@ html { scroll-padding-top: 96px; }
 .bridge__leg              { max-width: 320px; }
 .bridge__leg.is-use .t    { color: var(--teal); }
 .bridge__leg.is-impact .t { color: var(--gold); }
+
+/* ============================================================
+   S4 — ÍCONOS DE ARCO DE PROGRESO (3 nodos, iluminación progresiva)
+   ============================================================ */
+.aria2__step .iconbox svg { overflow: visible; }
+
+.aria2__step .iconbox .arc-done,
+.aria2__step .iconbox .arc-pending,
+.aria2__step .iconbox .seg-progress {
+  fill: none;
+  stroke-linecap: round;
+  stroke-width: 2.5;
+}
+.aria2__step .iconbox .arc-done    { stroke: var(--teal); }
+.aria2__step .iconbox .arc-pending { stroke: #dfe3e1; stroke-width: 2; }
+
+.aria2__step .iconbox .node-done    { fill: var(--teal); stroke: none; }
+.aria2__step .iconbox .node-pending { fill: none; stroke: #dfe3e1; stroke-width: 2; }
+.aria2__step .iconbox .node-gold    { fill: var(--gold); stroke: none; }
+.aria2__step .iconbox .halo-gold    {
+  fill: none; stroke: var(--gold); stroke-width: 1.5;
+  opacity: 0; transform-origin: center;
+}
+
+/* Segmento de progreso: visible por defecto (refresh-safe) */
+.aria2__step .iconbox .seg-progress {
+  stroke: var(--teal);
+  stroke-dasharray: 100;
+  stroke-dashoffset: 0;
+}
+/* override styles6 transition — el keyframe controla solo */
+.v6 .aria2__step .iconbox .seg-progress { transition: none; }
+
+@keyframes segDraw {
+  from { stroke-dashoffset: 100; }
+  to   { stroke-dashoffset: 0; }
+}
+.aria2__step.active .iconbox .seg-progress {
+  animation: segDraw 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes haloExpand {
+  0%   { opacity: 0.55; transform: scale(1); }
+  100% { opacity: 0;    transform: scale(1.85); }
+}
+.aria2__step.active .iconbox .halo-gold {
+  animation: haloExpand 1.2s cubic-bezier(0.4, 0, 0.6, 1) 0.35s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aria2__step.active .iconbox .seg-progress { animation: none; }
+  .aria2__step.active .iconbox .halo-gold    { animation: none; }
+}
