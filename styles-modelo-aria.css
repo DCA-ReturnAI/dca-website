@@ -848,3 +848,152 @@ html { scroll-padding-top: 96px; }
   .aria2__step.drawn  .iconbox .seg-progress { stroke-dashoffset: 0; }
   .aria2__step.active .iconbox .halo-gold    { animation: none; }
 }
+
+/* ============================================================
+   S5 · TABLA EDITORIAL — Los 14 Componentes
+   ============================================================ */
+
+.comp-table-wrap {
+  margin-top: 3rem;
+  border-radius: 8px;
+  border: 1px solid rgba(164,129,17,0.3);
+  overflow: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.comp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Montserrat', sans-serif;
+  background: #fff;
+  min-width: 560px;
+}
+
+/* Header */
+.comp-table thead tr {
+  border-bottom: 1px solid rgba(164,129,17,0.45);
+}
+.comp-table thead th {
+  padding: 13px 20px;
+  text-align: left;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8b94a0;
+  background: #f3f3f3;
+}
+.ct-col--level { text-align: center; width: 72px; }
+
+/* Rows */
+.comp-table__row {
+  border-bottom: 1px solid rgba(164,129,17,0.18);
+  transition: background 150ms ease;
+}
+.comp-table__row:last-child { border-bottom: none; }
+.comp-table__row:hover { background: rgba(46,139,118,0.045); }
+
+/* Col: Componente */
+.ct-name { padding: 15px 20px; white-space: nowrap; }
+.ct-name-inner { display: flex; align-items: center; gap: 11px; }
+.ct-num {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #2e8b76;
+  letter-spacing: 0.04em;
+  min-width: 18px;
+}
+.ct-name-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e2a38;
+  line-height: 1.3;
+}
+
+/* Col: Descripción */
+.ct-desc {
+  padding: 15px 20px;
+  font-size: 13.5px;
+  font-weight: 400;
+  color: rgba(30,42,56,0.68);
+  line-height: 1.5;
+}
+
+/* Col: Nivel badge */
+.ct-level { padding: 15px 20px; text-align: center; }
+.ct-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #2e8b76;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.ct-badge--sm { width: 20px; height: 20px; font-size: 9.5px; }
+
+/* Legend */
+.comp-table-legend {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  padding: 14px 20px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #8b94a0;
+  letter-spacing: 0.02em;
+  margin-top: 16px;
+}
+.comp-table-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+/* Mobile ≤ 767px: tabla a bloques */
+@media (max-width: 767px) {
+  .comp-table, .comp-table tbody, .comp-table__row { display: block; }
+  .comp-table thead { display: none; }
+  .comp-table__row {
+    display: grid;
+    grid-template-columns: 1fr 36px;
+    grid-template-rows: auto auto;
+    column-gap: 12px;
+    padding: 14px 16px;
+    border-bottom: 1px solid rgba(164,129,17,0.18);
+  }
+  .ct-name {
+    grid-column: 1;
+    grid-row: 1;
+    padding: 0;
+    white-space: normal;
+  }
+  .ct-desc {
+    grid-column: 1;
+    grid-row: 2;
+    padding: 4px 0 0;
+    font-size: 12.5px;
+  }
+  .ct-level {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 2px;
+  }
+  .comp-table-legend { gap: 16px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .comp-table__row { transition: none; }
+}
