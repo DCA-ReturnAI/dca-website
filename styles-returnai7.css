@@ -247,18 +247,30 @@
   text-decoration: underline;
 }
 
-/* Footer note */
+/* Footer close — two-tier closing statement */
 .vl-group--flagship {
   margin-bottom: 20px;
 }
 
-.vl-note {
+.vl-close {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 16px;
+}
+
+.vl-close__main {
+  font-size: clamp(14px, 1.2vw, 16px);
+  color: var(--carbon-70, #4a5568);
+  line-height: 1.65;
+  margin: 0 0 8px;
+}
+
+.vl-close__sub {
   font-size: 13px;
   color: var(--carbon-55, #8b94a0);
-  text-align: center;
-  padding-top: 16px;
-  max-width: 560px;
-  margin: 0 auto;
+  line-height: 1.5;
+  margin: 0;
 }
 
 /* ============================================================
