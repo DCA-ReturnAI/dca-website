@@ -10,8 +10,8 @@
 .rai4-scrolly { background: rgba(46,139,118,0.04); position: relative; padding: 0; }
 .rai4-scrolly__inner { height: 260vh; position: relative; }
 .rai4-scrolly__pin {
-  position: sticky; top: 60px; height: calc(100vh - 60px);
-  display: grid; align-content: start; padding-top: 40px; overflow: hidden;
+  position: sticky; top: 60px; height: min(calc(100vh - 60px), 760px);
+  display: grid; align-content: center; overflow: hidden;
 }
 .rai4-scrolly .section-head { margin-bottom: 0; }
 .rai4-scrolly .section-head h2 {
