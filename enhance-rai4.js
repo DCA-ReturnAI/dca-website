@@ -52,7 +52,7 @@
   }
 
   /* Auto-play: 4500ms, disparo único al entrar al viewport */
-  var DURATION = 4500;
+  var DURATION = 9000;
   var startTime = null;
   var playing = false;
 
