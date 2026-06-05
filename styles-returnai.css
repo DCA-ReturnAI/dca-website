@@ -341,3 +341,6 @@
 @media (max-width: 560px) {
   .rai-cta .btn--lg { width: 100%; justify-content: center; }
 }
+
+/* Hero credentials — números en oro (vs. teal en /modelo-aria) */
+.mra-hero .hero__cred b { color: var(--gold); }
