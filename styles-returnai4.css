@@ -7,7 +7,7 @@
    ============================================================ */
 
 /* ---------- 1 · BRIDGE EN SCROLLYTELLING (pieza central) ---------- */
-.rai4-scrolly { background: var(--white); position: relative; padding: 0; }
+.rai4-scrolly { background: rgba(46,139,118,0.04); position: relative; padding: 0; }
 .rai4-scrolly__inner { height: 260vh; position: relative; }
 .rai4-scrolly__pin {
   position: sticky; top: 60px; height: calc(100vh - 60px);

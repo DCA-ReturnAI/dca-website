@@ -297,7 +297,7 @@
    ============================================================ */
 
 /* — Hero editorial dividido — */
-.mra-hero--split { padding: 176px 0 104px; }
+.mra-hero--split { padding: 176px 0 64px; }
 .mra-hero--split .hero__inner { max-width: 1200px; }
 .mra-hero--split .hero-split {
   display: grid; grid-template-columns: 1.02fr 0.98fr; gap: 64px; align-items: center; text-align: left;
