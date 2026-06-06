@@ -89,7 +89,7 @@
 .rai3 .section--seam { border-top: 1px solid var(--border); }
 
 /* ---------- S8: Novela sobre teal (inversión vs. home donde CTA es teal y libro es blanco) ---------- */
-.rai3 .section--book-teal { background: var(--teal); }
+.rai3 .section--book-teal { background: var(--teal); padding: 80px 0; }
 .rai3 .book__slot { display: block; width: 100%; }
 .rai3 .book__slot img { display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 8px; }
 .rai3 .section--book-teal .book--inverted { grid-template-columns: 1.15fr 0.85fr; }
