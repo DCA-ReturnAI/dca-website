@@ -551,3 +551,40 @@
     transition: none !important;
   }
 }
+
+/* ============================================================
+   S9 · CTA FINAL — overrides (carga después de rai6, mayor precedencia)
+   ============================================================ */
+
+/* Label: block centrado + línea dorada debajo (vs inline-flex de rai6 que pone la línea a la derecha) */
+.rai3 .finalcta .label {
+  display: block;
+  text-align: center;
+  margin-bottom: 0;
+}
+.rai3 .finalcta .label::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: var(--gold);
+  border-radius: 2px;
+  margin: 10px auto 28px;
+  transition: width 0.6s var(--ease, ease) 0.2s;
+}
+.rai3 .finalcta .in .label::after { width: 52px; }
+
+/* H2: pirámide invertida 2 líneas — font reducido + wrap ampliado */
+.rai3 .finalcta h2 {
+  font-size: clamp(22px, 2.4vw, 30px);
+  text-wrap: unset;
+  margin-bottom: 24px;
+}
+.rai3 .finalcta h2 .line { display: block; }
+.rai3 .finalcta .rai-cta__wrap { max-width: 720px; }
+
+/* Chapeau: jerarquía subordinada, columna más angosta */
+.rai3 .finalcta .rai-cta__body {
+  max-width: 500px;
+  font-size: 16px;
+}
