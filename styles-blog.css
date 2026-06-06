@@ -882,10 +882,9 @@
 
 @media (max-width: 980px) {
   .masthead__grid { grid-template-columns: 1fr; gap: 48px; }
-  .exhibit__grid { grid-template-columns: 1fr; gap: 44px; }
-  .report-band__grid { grid-template-columns: 1fr; gap: 44px; }
-  .report-band__cover { max-width: 300px; }
-  .experts__grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .field-study__grid { grid-template-columns: 1fr; gap: 44px; }
+  .field-study__mock { max-width: 300px; aspect-ratio: 3 / 4; }
+  .authors-band__inner { grid-template-columns: 1fr 1fr; gap: 32px; }
 }
 
 @media (max-width: 899px) {
@@ -895,24 +894,12 @@
 @media (max-width: 767px) {
   .persp-head { padding: 132px 0 44px; }
   .masthead { padding-bottom: 72px; }
-  .exhibit, .report-band, .experts { padding: 72px 0; }
-  .exhibit__readout { gap: 28px; }
-  .experts__grid { grid-template-columns: 1fr; max-width: 360px; }
-  .facets__legend { width: 100%; }
-  .subnav { top: 56px; }
-  .subnav__inner { padding: 0 22px; gap: 16px; }
-  .subnav__label { display: none; }
-  .subnav__links { margin-left: 0; }
-  .bridge-band { padding: 84px 0; }
-  .bridge-band__head { margin-bottom: 56px; }
-  .bridge { grid-template-columns: 1fr; gap: 14px; max-width: 360px; }
-  .bridge__track, .bridge__fill {
-    top: 23px; bottom: 23px; left: 22px; width: 2px; height: auto;
-  }
-  .bridge__fill { transform: scaleY(var(--p, 0)); transform-origin: top; }
-  .bridge__node { display: grid; grid-template-columns: 46px 1fr; gap: 18px; text-align: left; align-items: start; padding: 14px 0; }
-  .bridge__dot { margin: 0; }
-  .bridge__desc { margin: 0; max-width: none; }
+  .field-study { padding: 72px 0; }
+  .authors-band { padding: 52px 0; }
+  .authors-band__inner { grid-template-columns: 1fr; gap: 28px; }
+  .catalog-filters { padding: 52px 0 8px; }
+  .blog-quote { padding: 56px 0; }
+  .blog-quote__inner { padding-left: 22px; }
   .newsletter-pulse { padding: 72px 0; }
   .pulse__inner { grid-template-columns: 1fr; gap: 40px; }
   .pulse__form { padding: 30px; }
@@ -926,7 +913,7 @@
   .article-grid { grid-template-columns: 1fr; padding-bottom: 88px; }
   .facet-chips { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-bottom: 4px; }
   .facet-chips::-webkit-scrollbar { display: none; }
-  .facets__row { gap: 10px; }
+  .catalog-filters { gap: 10px; flex-wrap: wrap; }
   .footer__grid--blog { grid-template-columns: 1fr; }
   .results-bar { padding-bottom: 24px; }
   .results-bar__active { margin-left: 0; width: 100%; }
@@ -935,6 +922,237 @@
 @media (max-width: 600px) {
   .wrap { padding: 0 22px; }
 }
+
+/* ============================================================
+   FILTROS INLINE DEL CATÁLOGO
+   ============================================================ */
+.catalog-filters {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 72px 0 8px;
+}
+.catalog-filters__legend {
+  font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--ink-soft); flex: none;
+}
+
+/* ============================================================
+   S4 PULL QUOTE EDITORIAL
+   ============================================================ */
+.blog-quote {
+  padding: 80px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.blog-quote__inner {
+  max-width: 640px;
+  padding-left: 32px;
+  border-left: 3px solid var(--gold);
+}
+.blog-quote__text {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: clamp(18px, 1.9vw, 24px);
+  line-height: 1.55;
+  color: var(--carbon);
+  margin: 0 0 24px;
+}
+.blog-quote__source {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-style: normal;
+}
+.blog-quote__author {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--carbon);
+}
+.blog-quote__article {
+  font-size: 13px;
+  color: var(--teal);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+.blog-quote__article:hover { opacity: 0.72; }
+
+/* ============================================================
+   S5 INVESTIGACIÓN EN CURSO (ex Reporte insignia)
+   ============================================================ */
+.field-study {
+  background: var(--carbon);
+  color: rgba(255, 255, 255, 0.86);
+  padding: 104px 0;
+}
+.field-study__grid {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 72px;
+  align-items: center;
+}
+.field-study__cover { perspective: 800px; }
+.field-study__mock {
+  aspect-ratio: 3 / 4;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #2e8b76 0%, #1a3d4c 55%, #121e28 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 32px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 32px 72px rgba(0, 0, 0, 0.45);
+}
+.field-study__mock::before {
+  content: "EN CONSTRUCCIÓN";
+  position: absolute;
+  top: 34px; right: -24px;
+  font-size: 9px; font-weight: 700; letter-spacing: 0.22em;
+  color: rgba(255, 255, 255, 0.22);
+  text-transform: uppercase;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  user-select: none;
+}
+.field-study__mock::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 18px,
+    rgba(255,255,255,0.02) 18px,
+    rgba(255,255,255,0.02) 19px
+  );
+  pointer-events: none;
+}
+.field-study__mock-tag {
+  display: inline-block;
+  font-size: 10px; font-weight: 700; letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  border: 1.5px solid var(--gold);
+  padding: 4px 10px;
+  border-radius: 3px;
+  margin-bottom: 18px;
+  width: fit-content;
+  position: relative; z-index: 1;
+}
+.field-study__mock-title {
+  font-family: var(--display);
+  font-size: clamp(18px, 2vw, 24px);
+  color: #fff;
+  line-height: 1.35;
+  position: relative; z-index: 1;
+}
+.field-study__text .label {
+  color: var(--gold);
+  display: block;
+  margin-bottom: 20px;
+}
+.field-study__h2 {
+  color: #fff;
+  font-size: clamp(24px, 2.6vw, 38px);
+  line-height: 1.2;
+  margin-bottom: 22px;
+  text-wrap: balance;
+}
+.field-study__h2 .line { display: block; }
+.field-study__text .chapeau {
+  color: rgba(255, 255, 255, 0.70);
+  margin-bottom: 36px;
+  max-width: 52ch;
+}
+.field-study__ctas {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+.field-study__secondary {
+  font-size: 14px; font-weight: 600;
+  color: rgba(255, 255, 255, 0.60);
+  text-decoration: none;
+  display: inline-flex; align-items: center; gap: 6px;
+  transition: color 0.2s ease;
+}
+.field-study__secondary:hover { color: #fff; }
+
+/* ============================================================
+   S6 QUIÉN INVESTIGA — banda editorial horizontal
+   ============================================================ */
+.authors-band {
+  padding: 64px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.authors-band__label {
+  font-size: 12px; font-weight: 600; letter-spacing: 0.09em;
+  text-transform: uppercase; color: var(--ink-soft);
+  display: block; margin-bottom: 36px;
+}
+.authors-band__inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+}
+.author-mini {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+.author-mini__photo {
+  flex: none;
+  width: 56px; height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--platinum);
+}
+.author-mini__photo image-slot {
+  display: block;
+  width: 100%; height: 100%;
+}
+.author-mini__info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 3px;
+}
+.author-mini__name {
+  font-family: var(--display);
+  font-size: 18px; color: var(--carbon); line-height: 1.2;
+}
+.author-mini__cred {
+  font-size: 12.5px; color: var(--ink-soft); line-height: 1.4;
+}
+.author-mini__count {
+  font-size: 12px; font-weight: 600; color: var(--gold);
+  margin-top: 5px;
+}
+
+/* ============================================================
+   S8 CTA — nota canónica y alt link
+   ============================================================ */
+.exit-cta__text h2 .line { display: block; }
+.exit-cta__note {
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  margin-top: 14px;
+  letter-spacing: 0.02em;
+}
+.exit-cta__alt {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--teal);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+.exit-cta__alt:hover { opacity: 0.72; }
 
 /* ============================================================
    REDUCED MOTION — desactiva todo el motion nuevo de la página
@@ -950,23 +1168,12 @@
   .article-card::after { transition: none !important; }
   .article-card__read::after { transition: none !important; }
   .masthead__media image-slot,
-  .masthead__featured:hover .masthead__media image-slot,
-  .report-band__cover image-slot,
-  .report-band__cover:hover image-slot,
-  .expert__photo image-slot,
-  .expert:hover .expert__photo image-slot { clip-path: none !important; transform: none !important; transition: none !important; }
-  .chart-line { stroke-dashoffset: 0 !important; transition: none !important; }
-  .chart-area, .chart-dot { opacity: 1 !important; transition: none !important; }
-  .bridge__fill { transform: scaleX(1) !important; transition: none !important; }
-  .bridge__dot, .bridge__stage { transition: none !important; }
-  .bridge__metric { opacity: 1 !important; transform: none !important; transition: none !important; }
-  .bridge__dot::before { animation: none !important; }
-  .subnav { transition: none !important; }
+  .masthead__featured:hover .masthead__media image-slot { clip-path: none !important; transform: none !important; transition: none !important; }
   .rail-item__title { transition: none !important; }
   .rail-item:hover .rail-item__title { transform: none !important; }
   .footer__col a::after { transition: none !important; }
   .active-chip, .results-bar__clear, .pulse__input { transition: none !important; }
-}
-@media (prefers-reduced-motion: reduce) and (max-width: 767px) {
-  .bridge__fill { transform: scaleY(1) !important; }
+  .blog-quote__article { transition: none !important; }
+  .field-study__secondary { transition: none !important; }
+  .exit-cta__alt { transition: none !important; }
 }
