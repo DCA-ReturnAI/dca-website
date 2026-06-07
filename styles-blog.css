@@ -141,6 +141,15 @@
   text-wrap: balance;
 }
 .masthead__featured:hover .masthead__title { color: var(--teal); }
+.masthead__subtitle {
+  font-family: var(--body);
+  font-size: 0.875rem;
+  font-style: italic;
+  color: var(--teal);
+  font-weight: 400;
+  margin: -10px 0 14px;
+  opacity: 0.85;
+}
 .masthead__excerpt {
   font-size: 17px; line-height: 1.6; color: var(--carbon-70);
   margin-bottom: 22px; max-width: 60ch;
