@@ -66,6 +66,9 @@
 .hero--decl .purpose__inner {
   margin-top: 64px;
 }
+.hero--decl .purpose__inner .section-head {
+  margin-bottom: 18px !important;
+}
 .purpose__statement {
   font-size: clamp(20px, 1.8vw, 24px);
   max-width: 940px;
