@@ -62,17 +62,17 @@
   padding-bottom: 72px;
 }
 
-/* ---------- PROPÓSITO — dentro del hero, separador editorial fino ---------- */
+/* ---------- PROPÓSITO — dentro del hero, sin borde interno ---------- */
 .hero--decl .purpose__inner {
   margin-top: 64px;
-  padding-top: 56px;
-  border-top: 1px solid var(--border);
 }
 .purpose__statement {
-  font-size: clamp(22px, 2.2vw, 30px);
-  max-width: 760px;
-  text-wrap: pretty;
+  font-size: clamp(20px, 1.8vw, 24px);
+  max-width: 940px;
+  text-wrap: unset;
 }
+.purpose__statement .line { display: block; }
+.purpose__body { margin-top: 20px; max-width: 760px; }
 
 /* ---------- SCALE STATS — aclaración LARIA ---------- */
 /* El stat de 17 países lleva un tag secundario bajo el label */
