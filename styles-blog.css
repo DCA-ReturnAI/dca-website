@@ -272,7 +272,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
-  padding: 0 0 120px;
+  padding: 0 0 64px;
 }
 
 .article-card {
@@ -960,7 +960,8 @@
   border-bottom: 1px solid var(--border);
 }
 .blog-quote__inner {
-  max-width: 640px;
+  max-width: 800px;
+  margin: 0 auto;
   padding-left: 32px;
   border-left: 3px solid var(--gold);
 }
@@ -1099,8 +1100,7 @@
    ============================================================ */
 .authors-band {
   padding: 64px 0;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
+  background: var(--platinum);
 }
 .authors-band__label {
   font-size: 12px; font-weight: 600; letter-spacing: 0.09em;
