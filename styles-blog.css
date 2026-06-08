@@ -1085,6 +1085,16 @@
   margin-bottom: 36px;
   max-width: 52ch;
 }
+.field-study__closer {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--teal);
+  line-height: 1.5;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
 .field-study__ctas {
   display: flex;
   align-items: center;
