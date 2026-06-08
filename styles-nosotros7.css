@@ -114,6 +114,11 @@
   text-transform: uppercase; color: rgba(255,255,255,0.55);
 }
 
+/* ---------- PIRÁMIDE INVERTIDA — párrafos de declaración de marca ---------- */
+/* Regla canónica: párrafos lead en secciones de identidad usan span.line,
+   igual que headlines. .line { display: block } controla quiebres explícitos. */
+.p-pyramid .line { display: block; }
+
 /* ---------- S2 — firma-split: prose + logosímbolo ---------- */
 .firma-split {
   display: grid;
