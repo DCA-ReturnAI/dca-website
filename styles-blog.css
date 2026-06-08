@@ -1074,10 +1074,10 @@
 }
 .field-study__h2 {
   color: #fff;
-  font-size: clamp(24px, 2.6vw, 38px);
+  font-size: clamp(20px, 2vw, 28px);
   line-height: 1.2;
   margin-bottom: 22px;
-  text-wrap: balance;
+  text-wrap: unset;
 }
 .field-study__h2 .line { display: block; }
 .field-study__text .chapeau {
