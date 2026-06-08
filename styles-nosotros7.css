@@ -73,11 +73,14 @@
   font-size: clamp(20px, 1.8vw, 24px);
   max-width: 940px;
   text-wrap: unset;
+  margin-top: 24px;
 }
 .purpose__statement .line { display: block; }
 .purpose__body { margin-top: 20px; max-width: 760px; }
 
 /* ---------- S2 LA FIRMA — ajustes BE aprobados 2026-06-08 ---------- */
+/* H2 reducido: sección de apoyo, no puede competir con H1 del hero */
+#la-firma .section-head h2 { font-size: clamp(24px, 2.6vw, 36px); }
 /* Reducir gap H2 → cuerpo */
 #la-firma .section-head { margin-bottom: 32px; }
 
