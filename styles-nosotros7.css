@@ -105,10 +105,10 @@
   color: var(--teal);
 }
 
-/* ---------- CRED-LIST — espacio etiqueta teal / línea divisoria ---------- */
-/* La etiqueta teal necesita más aire respecto al border-top del row anterior */
+/* ---------- CRED-LIST — espacio etiqueta teal / borde izquierdo ---------- */
+/* padding-left aleja la etiqueta teal del borde izquierdo de la tarjeta */
 .cred-list li {
-  padding: 22px 0 18px;
+  padding: 22px 0 18px 16px;
 }
 
 /* ---------- SCALE STATS — aclaración LARIA ---------- */
