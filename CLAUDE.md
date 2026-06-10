@@ -34,10 +34,9 @@ Nuevas páginas: `<body class="v4 v5 v6">` y cargar las 4 CSS + 3 JS + image-slo
 | `/blog` | `blog.html` | Perspectivas — liderazgo de pensamiento | ✅ Completo y en producción |
 | `/modelo-aria` | `modelo-aria.html` | Autoridad intelectual: 14 componentes, 6 sprints, garantía | ✅ Fine-tuning BE completo |
 | `/returnai` | `returnai.html` | Vitrina comercial: sistema ReturnAI, escalera de valor | ✅ Implementada — fine-tuning al final |
-| `/nosotros` | `nosotros.html` | DCA, fundadores, casos, partnerships | ✅ **Deployada** — 10 secciones. S1+S2 fine-tuning cerrados. S3–S10 pendientes. |
+| `/nosotros` | `nosotros.html` | DCA, fundadores, validación de escala, método | ✅ **Fine-tuning cerrado definitivo** — 9 secciones (2026-06-08) |
 | `/academia` | `academia.html` | Digital Change Academy: certificaciones | ⏳ Pendiente |
 | `/red-aria` | `red-aria.html` | Captación de nodos/socios por país | ⏳ Pendiente |
-| `/casos` | `casos.html` | ROI documentado — caso ancla $3.2M | ⏳ Pendiente |
 | `/libro` | `libro.html` | ReturnAI la novela, Amazon, extracto | ⏳ Pendiente |
 | `/comunidad` | `comunidad.html` | LARIA: 240 miembros, Skool | ⏳ Pendiente |
 | `/contacto` | `contacto.html` | Formulario mínimo, sin chatbots | ⏳ Pendiente |
@@ -97,7 +96,7 @@ Nuevas páginas: `<body class="v4 v5 v6">` y cargar las 4 CSS + 3 JS + image-slo
 - Apertura modal: "El 95% de las empresas invierte en IA. Solo el **5%** genera retorno medible."
 - JS en `app.js`, CSS en `styles.css` (sección Modal)
 
-> **Distinción con el Caso Ancla real:** El caso de la novela (Adalid Puentes, $8.2M/11%→70%) es diferente del caso ancla documentado con cliente real (Gestora de inversiones, $3.2M → 19%→67%, +13 puntos). El homepage usa el caso de la novela. El caso real se usa en páginas de evidencia (`/casos`) y en argumentación con dato de negocio.
+> **Distinción con el Caso Ancla real:** El caso de la novela (Adalid Puentes, $8.2M/11%→70%) es diferente del caso ancla documentado con cliente real (Gestora de inversiones, $3.2M → 19%→67%, +13 puntos). El homepage usa el caso de la novela. El caso real se usa en copy de /returnai, /nosotros y argumentación con dato de negocio. No existe `/casos` como página independiente.
 
 ### Sección Validación (stats bg-teal)
 - `70+` Empresas intervenidas · `57+` Consultores certificados DCA · `17` Países · Comunidad LARIA
@@ -125,9 +124,9 @@ Nuevas páginas: `<body class="v4 v5 v6">` y cargar las 4 CSS + 3 JS + image-slo
 - **Sección Industrias:** tira horizontal (`.industries-strip`) — no grid con links
 - **Diferenciación:** componente `versus2` con arco SVG del logo — no tabla `versus` simple
 
-## Decisiones Canónicas de `/nosotros` — **FINE-TUNING EN CURSO** (2026-06-08)
+## Decisiones Canónicas de `/nosotros` — **FINE-TUNING TOTAL CERRADO** (2026-06-08)
 
-> Pre-audit ejecutado: `/behavioral-economics-c-level` + `/ui-ux-pro-max`. Etapa dictaminada: Validación. 10 secciones (S2 Propósito fusionada en S1). S1 y S2 fine-tuning cerrados. S3–S10 pendientes.
+> Pre-audit ejecutado: `/behavioral-economics-c-level` + `/ui-ux-pro-max`. Etapa dictaminada: Validación. 10 secciones (S2 Propósito fusionada en S1). S1–S10 fine-tuning cerrados.
 
 ### Etapa conductual y mecanismos
 - **Etapa:** Validación — visitante evalúa si DCA es firma real, no activa el problema (ya lo sabe)
@@ -139,14 +138,14 @@ Nuevas páginas: `<body class="v4 v5 v6">` y cargar las 4 CSS + 3 JS + image-slo
 ### Estructura — 10 secciones (canónica 2026-06-08)
 1. **S1** `#nosotros` — Hero + Ficha + Propósito fusionados · un solo bloque blanco continuo · **fine-tuning cerrado**
 2. **S2** `#la-firma` — La firma (bg-platinum) · **fine-tuning cerrado**
-3. (sin id) — Banda editorial fullbleed · `image-slot #img-firma-banda` (pendiente foto real)
-4. `#liderazgo` — César Lozano · `src="assets/img-leader-1.png"` conectada ✅
-5. (bg-platinum) — Ruth Jaramillo · `src="assets/img-leader-2.png"` conectada ✅ · espejada
-6. `#metodo` — Modelo ARIA stepper fijo (Assessment / Intervención / Atestación)
-7. `#principios` — Cuatro principios
-8. (bg-teal) — Validación de escala · count-up `70+/57+/17/14`
-9. `#evidencia` — Evidencia de campo · $3.2M · count-up 19→67 · CTA → `casos.html`
-10. `#cta-final` — Diagnóstico ejecutivo · `AI Return Test →`
+3. (sin id) — Banda editorial fullbleed · `src="assets/nosotros-banda.png"` ✅ · **fine-tuning cerrado**
+4. `#liderazgo` — César Lozano · `src="assets/img-leader-1.png"` conectada ✅ · **fine-tuning cerrado**
+5. (bg-platinum) — Ruth Jaramillo · `src="assets/img-leader-2.png"` conectada ✅ · espejada · **fine-tuning cerrado**
+6. `#metodo` — Modelo ARIA grid estático 3 fases · **fine-tuning cerrado**
+7. `#principios` — Cuatro reglas de operación · **fine-tuning cerrado**
+8. (bg-teal) — Validación de escala · count-up `70+/57+/17/14` · **fine-tuning cerrado**
+9. `#evidencia` — Evidencia de campo · $3.2M · count-up 19→67 · +13pts · **fine-tuning cerrado**
+10. `#cta-final` — Diagnóstico ejecutivo · `AI Return Test →` · **fine-tuning cerrado**
 
 **Secciones eliminadas/fusionadas:**
 - ~~S3 Puente animado~~ — duplicaba el homepage, incompatible con etapa Validación
@@ -162,11 +161,86 @@ Nuevas páginas: `<body class="v4 v5 v6">` y cargar las 4 CSS + 3 JS + image-slo
 - Sin `purpose__rule`, sin scrollcue
 
 ### S2 — La Firma (canónico 2026-06-08)
-- **P1**: origen de campo + prueba social: "DCA nació de una constatación de campo: ninguna firma estaba resolviendo la brecha... En 70+ organizaciones intervenidas, el patrón se repite sin excepción."
-- **P2** (`lead-assert`): "auditar" > "medir" · "en 120 días" como ancla temporal
-- **not-firm**: reordenado (gestión del cambio primero) · elevado a Marcellus italic + borde oro (pull quote)
-- **firm-affirm**: "Somos la firma que construye la evidencia. Eso es todo." · cierre en teal · resuelve tensión cognitiva de las 3 negaciones
-- **P4 ReturnAI**: sujeto de la frase · "metodología propietaria" > "marca paraguas" · "retorno auditable: documentado en el P&L en 120 días"
+- **p-pyramid**: `<div class="p-pyramid">` (no `<p>`) + `.p-pyramid { display:flex; flex-direction:column }` + `.p-pyramid .line { white-space:nowrap; font-size:15px }` — garantiza 3 líneas exactas. En mobile `<768px`: `white-space:normal`. ⚠️ Regla: NUNCA usar `<p>` para pirámide invertida dentro de contenedor de ancho fijo.
+- **firma-mark**: `justify-content: flex-start` — símbolo anclado al borde izquierdo de su columna, más cercano al texto
+- **p-pyramid copy**: L1 "DCA nació de una constatación de campo: ninguna firma estaba resolviendo" / L2 "la brecha entre las inversiones en IA y el retorno documentable." / L3 "70+ organizaciones intervenidas. Sin excepción."
+- **not-firm**: reordenado (gestión del cambio primero) · Marcellus italic + borde oro
+- **firm-affirm**: "Somos la firma que construye la evidencia. Eso es todo." · teal 600
+- **ReturnAI P**: sujeto de la frase · "metodología propietaria" · "retorno auditable: documentado en el P&L en 120 días"
+
+### S3 — Banda editorial (canónico 2026-06-08)
+- Imagen: `assets/nosotros-banda.png` (1920×900px, grade frío teal-carbón, 3 ejecutivos latinoamericanos, mesa oscura, skyline ciudad)
+- `image-slot #img-firma-banda` conectado con `src`
+- Caption: "Acompañamos a comités ejecutivos a convertir la inversión en IA en retorno auditable."
+
+### S4 — César Lozano (canónico 2026-06-08)
+- **Quote canónica**: «Las decisiones de inversión en IA y la pregunta por su retorno ocurren en la misma sala — con 120 días de diferencia. Lo vimos repetirse en 70 organizaciones: siempre el mismo patrón. Un patrón se puede romper. El Modelo ARIA lo logra.»
+  - "Lo vimos" = colectivo (César + Ruth) · sin arrogancia unipersonal
+  - "El Modelo ARIA lo logra." = sujeto propietario + verbo activo · no "es la solución"
+- **Prose canónica** (3 párrafos, sin redundancia con quote):
+  - P1: "Con más de 30 años como consultor corporativo, César desarrolló una tesis que ningún vendor de IA quiere escuchar: el problema del retorno no es tecnológico. Es organizacional — y tiene solución si se interviene correctamente."
+  - P2: "El Modelo ARIA es esa intervención: 14 componentes que no prometen transformación, sino evidencia de retorno medible, certificada en los KPIs que la organización definió antes de comenzar."
+  - P3: "Su trabajo no es convencer a los equipos de que la IA es el futuro. Es construir la condición para que la inversión ya hecha demuestre su retorno ante la Junta — en 120 días."
+- **Cred-list canónica**:
+  - Rol: "Fundador y CEO de Digital Change Advisors"
+  - Trayectoria: "70+ intervenciones organizacionales en USA y Latinoamérica"
+  - Autoría: "Creador del *Modelo ARIA* — 14 componentes propietarios"
+  - Publicaciones: "+10 obras de liderazgo y desarrollo empresarial. Autor de la novela «ReturnAI»" (una sola línea, sin `.pub` spans)
+
+### S5 — Ruth Jaramillo (canónico 2026-06-08)
+- **Quote canónica** (Opción A — paper08, voz de campo):
+  «En veinte años al frente de operaciones empresariales nunca vi una tecnología que generara retorno sin un líder que creara las condiciones para que su equipo la usara de forma distinta. La IA no es la excepción — es el caso más extremo de esa regla.»
+  - "Nunca vi" = observación de campo, no declaración teórica · sin arrogancia
+  - Complementa la quote de César: él habla del patrón sistémico, ella del comportamiento de liderazgo
+- **Prose canónica** (3 párrafos):
+  - P1: "Su especialidad es la intersección que menos firmas practican: neurociencias de la adopción aplicadas a cómo la IA se incorpora al flujo diario de trabajo. Cuando un equipo certificado deja de usarla, no es un desafío de gestión — es un desafío de arquitectura cognitiva. Y esa distinción define si el retorno aparece o no en el P&L."
+  - P2: "Dentro del Modelo ARIA, diseñó los tres instrumentos diagnósticos que convierten el comportamiento humano en variable medible e intervenible: el AIMT, el AILS y el AICD — 79 reactivos que traducen lo que habitualmente es percepción subjetiva en datos que la dirección puede gestionar y auditar ante la Junta."
+  - P3: "Autora de «Sembrando Semillas de Vida» y co-autora de «Mentalidad Digital» — el libro que documenta cómo las neurociencias aplicadas al entorno corporativo determinan el retorno de la inversión en IA."
+- **Cred-list canónica**:
+  - Formación: "Ingeniera Industrial · MBA EAFIT"
+  - Certificación: "Neuro Coach Profesional — Neuroscience and Coaching Institute (USA)"
+  - Experiencia: "20+ años como ejecutiva empresarial"
+  - Publicaciones: «Sembrando Semillas de Vida» / «Mentalidad Digital» (solo títulos en `.pub` spans, sin descriptores)
+- **cred-list CSS** (ambas tarjetas): `.cred-list li { padding: 11px 0 9px 16px }` — reducido a la mitad. Override en `styles-nosotros7.css`.
+
+### S6 — Modelo ARIA (canónico 2026-06-08)
+- **Estructura:** grid estático `.metodo-grid` 3 columnas — NO el stepper aria2 interactivo (show/hide)
+- **Razón:** contenido de apoyo (1 oración por fase); la interacción show/hide no aporta valor con tan poco contenido
+- **Fases:** Diagnóstico / Solución / Impacto — nombres canónicos del homepage. **NUNCA** Assessment/Intervención/Atestación
+- **Card 01 Diagnóstico:** "AIMT, AILS y AICD — 79 reactivos — establecen el AI Human Gap: las creencias, el liderazgo y la cultura que frenan el retorno de la IA en tu organización."
+- **Card 02 Solución:** "Seis aceleradores propietarios intervienen los obstáculos identificados y conectan las herramientas de IA con los KPIs del negocio en el flujo diario de trabajo."
+- **Card 03 Impacto:** "Cinco instrumentos evidencian el retorno en el P&L, instalan la gobernanza y transfieren el método como capacidad interna auditable."
+- **Footer `.method-foot`:** "Cada componente es un instrumento propietario — no son una solución improvisada. **+57 consultores certificados DCA** los aplican con el mismo estándar en toda Latinoamérica: el cuerpo de conocimiento que convierte el método en capacidad replicable." + `btn--secondary` → `modelo-aria.html`
+- **H2 font:** `clamp(22px, 2vw, 28px)` — sección de apoyo, no puede competir con H1 hero
+- **CSS:** `.metodo-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:32px }` + `.metodo-card` (border 1px, border-radius 12px, padding 32px 28px) + spring hover `translateY(-4px)` cubic-bezier(0.34,1.56,0.64,1)
+- **Responsive:** `<1024px` → `grid-template-columns:1fr`
+
+### S7 — Principios (canónico 2026-06-08)
+- **H2:** "Cuatro reglas de operación que hacen la garantía de retorno firmable."
+- **Chapeau:** "Sin ellas, un resultado de 120 días es una promesa. Con ellas, es un compromiso que se puede firmar antes de comenzar."
+- **BE:** eliminado framing de negación ("No son valores de afiche") — activaba imagen negativa antes de corregirla. Reemplazado por contraste directo Sin/Con que opera con el mismo mecanismo sin paso negativo.
+- **"firmar"** (no "rubricar") — lenguaje ejecutivo directo C-Level
+
+### S8 — Validación de escala (canónico 2026-06-08)
+- **Stats:** `70+` Empresas intervenidas · `57+` Consultores certificados DCA · `17` Países · `14` Componentes
+- **Stat 17:** sublabel "PAÍSES · COMUNIDAD LARIA" — nunca solo "17 Países" sin este sublabel
+- **Stat 14:** label "COMPONENTES PROPIETARIOS"
+- **bg-teal** fondo teal sólido, count-up animado
+
+### S9 — Evidencia de campo (canónico 2026-06-08)
+- **Fix:** "+13 puntos de persistencia de clientes en 120 días." (no "Trece puntos de incremento en persistencia")
+- **Por qué:** "19%→67%" son datos de adopción; "+13 puntos" es una métrica de negocio separada. La redacción anterior parecía implicar 67-19=48, no 13. El framing correcto lo atribuye explícitamente al indicador de negocio.
+- **Texto canónico:** "El impacto en el negocio: +13 puntos de persistencia de clientes en 120 días. Retorno documentado en el P&L al día 120."
+
+### S10 — CTA final (canónico 2026-06-08)
+- **Nota:** "25 minutos · Aplicado por un socio · Tu diagnóstico es confidencial"
+- **Frame:** posición competitiva relativa ("ubica a tu organización dentro del mapa de 70+ empresas") — apropiado para etapa Validación
+
+### CSS canónico en `styles-nosotros7.css` (esta sesión)
+- `.founder__body h2 { font-size: clamp(24px, 2.4vw, 32px) }` — nombres fundadores: equilibrio visual
+- `#metodo .section-head h2 { font-size: clamp(22px, 2vw, 28px) }` — H2 sección de apoyo
+- `.cred-list li { padding: 11px 0 9px 16px }` — espaciado reducido a la mitad
+- `.metodo-grid`, `.metodo-card`, `.metodo-card__n`, `.metodo-card h3`, `.metodo-card p` — grid estático 3 fases
 
 ### Archivos de la página
 - HTML: `nosotros.html`
@@ -420,7 +494,7 @@ Estas dos métricas se monitorizan sprint a sprint y alimentan el Reporte Ejecut
 - [x] Perspectivas (`blog.html`)
 - [x] `/modelo-aria` — Fine-tuning BE completo (8 puntos · commit `4b4abe8`). Pendiente: image-slots → img reales antes del dominio final
 - [x] `/returnai` — v6 implementada, brand compliance aplicado, routing canónico. Fine-tuning al final. **bridge usa 19% (real case) — verificar alineación con homepage (11%)**
-- [~] `/nosotros` — **FINE-TUNING EN CURSO** (2026-06-08). 10 secciones (Propósito fusionado en S1). S1 cerrado: H1 2L, ficha centrada, España, propósito integrado, pirámide 3L. S2 cerrado: copy BE (origen+70+, auditar, not-firm reordenado+Marcellus+oro, firm-affirm teal, ReturnAI como sujeto). S3–S10 pendientes.
+- [~] `/nosotros` — **FINE-TUNING EN CURSO** (2026-06-08). 10 secciones. S1 cerrado: H1 2L, ficha, propósito integrado, pirámide 3L. S2 cerrado: p-pyramid `div+nowrap`, firma-mark `flex-start`, copy BE. S3 cerrado: banda editorial `nosotros-banda.png`. S4 cerrado: quote canónica "Lo vimos/Modelo ARIA lo logra" + prose 3P BE sin redundancias. S5–S10 pendientes.
 - [ ] `/casos`
 - [ ] 5 páginas restantes
 - [ ] Landing pages (siguiente fase — 11 landings)
