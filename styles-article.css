@@ -693,6 +693,7 @@
   color: #c2593f;
   margin: 6px 0 0;
 }
+.art-pulse__error[hidden] { display: none; }
 .art-pulse__success {
   display: flex;
   align-items: center;
@@ -702,6 +703,7 @@
   font-weight: 500;
   padding: 12px 0;
 }
+.art-pulse__success[hidden] { display: none; }
 .art-pulse__success svg { flex-shrink: 0; }
 @media (max-width: 767px) {
   .art-pulse { padding: 40px 0; }
